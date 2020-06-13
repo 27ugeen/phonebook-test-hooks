@@ -1,0 +1,7 @@
+.userListItem {
+  display: flex;
+}
+
+.userListItem span {
+  margin-right: 20px;
+}

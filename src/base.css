@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #212121;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bgLight {
+  background: #ffffff;
+  color: #3c3c3c;
+}
+
+.bgDark {
+  background: #3c3c3c;
+  color: #ffffff;
+}
+
+/* ====navLinkThemeConfig====== */
+
+.navLinkLight {
+  color: #3c3c3c;
+}
+
+.navLinkActiveLight {
+  color: #d4396d;
+}
+
+.navLinkDark {
+  color: #ffffff;
+}
+
+.navLinkActiveDark {
+  color: #2196f3;
+}
+
+/* ================================ */
+.themeSelector {
+  margin-right: 30px;
+}
+
+.themeSelector .label {
+  top: -10px;
+  position: relative;
+  padding: 0px 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cccccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ==========Buttons color============ */
+
+.formBtnLight {
+  background: linear-gradient(#6e7078, #515156) #6e7078;
+}
+.formBtnLight:hover:not(:active) {
+  background: linear-gradient(#4d4d50, #313138) #4d4d50;
+}
+.formBtnLight:active {
+  background: linear-gradient(#202020, #141416) #202020;
+}
+.formBtnDark {
+  background: linear-gradient(#2196f3, #1c7bc8) #2196f3;
+}
+.formBtnDark:hover:not(:active) {
+  background: linear-gradient(#0f78ce, #124977) #0f78ce;
+}
+.formBtnDark:active {
+  background: linear-gradient(#134f80, #061b2c) #134f80;
+}
+
+/* ===========CSSTransition=============== */
+
+.visible-enter,
+.visible-appear {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.visible-enter-active,
+.visible-appear-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 250ms linear;
+}
+
+.visible-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.visible-exit-active {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 250ms linear;
+}

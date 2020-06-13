@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+.userAvatar {
+  margin-right: 4px;
+}
+.userName {
+  font-weight: 700;
+  margin-right: 12px;
+}

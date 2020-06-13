@@ -1,0 +1,13 @@
+.navList {
+  margin-right: 30px;
+}
+
+.navList a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navList a:not(:last-child) {
+  margin-right: 30px;
+}

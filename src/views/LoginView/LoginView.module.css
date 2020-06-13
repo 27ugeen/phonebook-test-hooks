@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* ===CSSTransition=== */
+
+.enter {
+  transform: translateY(100%);
+}
+
+.enterActive {
+  transform: translateY(0);
+  transition: all 250ms ease-in-out;
+}
+
+.exit {
+  transform: scale(1);
+}
+
+.exitActive {
+  transform: scale(0);
+  transition: all 250ms ease-in-out;
+}

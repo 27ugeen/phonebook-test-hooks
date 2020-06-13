@@ -1,0 +1,21 @@
+.littleButton {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #d1d1d9;
+  text-decoration: none;
+  text-shadow: 0 -1px 2px #00000033;
+  box-shadow: 0 1px #ffffff33 inset, 0 3px 5px #00010680, 0 0 1px 1px #00010633;
+  transition: 0.2s ease-in-out;
+}
+
+.littleButton:active {
+  top: 1px;
+  box-shadow: 0 0 1px #00000080 inset, 0 2px 3px #00000080 inset,
+    0 1px 1px #ffffff1a;
+}
