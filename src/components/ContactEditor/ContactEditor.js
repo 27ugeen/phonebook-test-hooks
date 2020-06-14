@@ -28,7 +28,6 @@ export default function ContactEditor() {
   };
 
   const pevContacts = useSelector(contactsSelectors.getContactsItems);
-  // const onAddContact = useDispatch(contactsOperations.addContact);
 
   const dispatch = useDispatch();
   const onAddContact = () =>
@@ -36,12 +35,7 @@ export default function ContactEditor() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(name);
-
-    // const contacts = items;
-
-    // console.dir(pevContacts);
-    // console.dir(onAddContact);
+    console.log(pevContacts);
     if (!isNaN(+name)) {
       updateAlertMessage('Enter valid Name');
       return;
